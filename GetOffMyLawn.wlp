@@ -5384,7 +5384,9 @@
                 {
                     "type": "kid",
                     "kid": {
-                        "animatedObject": "1004"
+                        "animatedObject": "1004",
+                        "throwablesParent": "1044",
+                        "throwableNewParent": "219"
                     }
                 }
             ]
@@ -5623,7 +5625,8 @@
         },
         "1037": {
             "name": "positions",
-            "parent": "219"
+            "parent": "219",
+            "deleted": true
         },
         "1038": {
             "name": "Mesh.003",
@@ -5654,7 +5657,8 @@
                 0.0,
                 -6.1859502,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "1039": {
             "name": "Mesh.003",
@@ -5685,7 +5689,8 @@
                 0.0,
                 -6.1859502,
                 1.0
-            ]
+            ],
+            "deleted": true
         },
         "1040": {
             "name": "FenceCollision",
@@ -5777,6 +5782,622 @@
                 1.1,
                 -4.4874782,
                 1.0
+            ]
+        },
+        "1042": {
+            "name": "Physx",
+            "parent": "219",
+            "transformation": [
+                1.000004,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.000004,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "1043": {
+            "name": "PhysicsBody",
+            "parent": "1042",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "plane",
+                        "kinematic": true,
+                        "static": true
+                    }
+                }
+            ],
+            "transformation": [
+                -1.192094885027473e-7,
+                1.0000017,
+                0.0,
+                0.0,
+                -1.0000036,
+                -1.192097158764227e-7,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0000019,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "1044": {
+            "name": "Throwables",
+            "parent": "219",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -4.432218,
+                0.0,
+                1.0
+            ]
+        },
+        "1048": {
+            "link": {
+                "name": "SM_Item_Drink_01",
+                "file": "models\\SM_Item_Drink_01.fbx"
+            },
+            "parent": "1044",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.4901161193847657e-8,
+                0.0,
+                -1.4768809,
+                1.0
+            ],
+            "name": "Drink1_01",
+            "components": [
+                {
+                    "mesh": {
+                        "mesh": "1047",
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1047",
+                            "scaling": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1049": {
+            "link": {
+                "name": "SM_Item_Drink_01",
+                "file": "models\\SM_Item_Drink_01.fbx"
+            },
+            "parent": "1044",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.4901161193847657e-8,
+                0.0,
+                -1.4768809,
+                1.0
+            ],
+            "name": "Drink1_02",
+            "components": [
+                {
+                    "mesh": {
+                        "mesh": "1047",
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1047",
+                            "scaling": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1050": {
+            "link": {
+                "name": "SM_Item_Drink_01",
+                "file": "models\\SM_Item_Drink_01.fbx"
+            },
+            "parent": "1044",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.4901161193847657e-8,
+                0.0,
+                -1.4768809,
+                1.0
+            ],
+            "name": "Drink1_03",
+            "components": [
+                {
+                    "mesh": {
+                        "mesh": "1047",
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1047",
+                            "scaling": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1051": {
+            "link": {
+                "name": "SM_Item_Drink_01",
+                "file": "models\\SM_Item_Drink_01.fbx"
+            },
+            "parent": "1044",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.4901161193847657e-8,
+                0.0,
+                -1.4768809,
+                1.0
+            ],
+            "name": "Drink1_04",
+            "components": [
+                {
+                    "mesh": {
+                        "mesh": "1047",
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1047",
+                            "scaling": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1052": {
+            "link": {
+                "name": "SM_Item_Drink_01",
+                "file": "models\\SM_Item_Drink_01.fbx"
+            },
+            "parent": "1044",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.4901161193847657e-8,
+                0.0,
+                -1.4768809,
+                1.0
+            ],
+            "name": "Drink1_05",
+            "components": [
+                {
+                    "mesh": {
+                        "mesh": "1047",
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1047",
+                            "scaling": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1056": {
+            "link": {
+                "name": "SM_Item_Drink_02",
+                "file": "models\\SM_Item_Drink_02.fbx"
+            },
+            "parent": "1044",
+            "name": "Drink2_01",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1055"
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1057": {
+            "link": {
+                "name": "SM_Item_Drink_02",
+                "file": "models\\SM_Item_Drink_02.fbx"
+            },
+            "parent": "1044",
+            "name": "Drink2_02",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1055"
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1058": {
+            "link": {
+                "name": "SM_Item_Drink_02",
+                "file": "models\\SM_Item_Drink_02.fbx"
+            },
+            "parent": "1044",
+            "name": "Drink2_03",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1055"
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1059": {
+            "link": {
+                "name": "SM_Item_Drink_02",
+                "file": "models\\SM_Item_Drink_02.fbx"
+            },
+            "parent": "1044",
+            "name": "Drink2_04",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1055"
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1060": {
+            "link": {
+                "name": "SM_Item_Drink_02",
+                "file": "models\\SM_Item_Drink_02.fbx"
+            },
+            "parent": "1044",
+            "name": "Drink2_05",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1055"
+                        },
+                        "kinematic": true,
+                        "mass": 0.25,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1064": {
+            "link": {
+                "name": "SM_Item_ToiletRoll_02",
+                "file": "models\\SM_Item_ToiletRoll_02.fbx"
+            },
+            "parent": "1044",
+            "name": "ToiletRoll_01",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "mass": 0.5,
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1063"
+                        },
+                        "kinematic": true,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1065": {
+            "link": {
+                "name": "SM_Item_ToiletRoll_02",
+                "file": "models\\SM_Item_ToiletRoll_02.fbx"
+            },
+            "parent": "1044",
+            "name": "ToiletRoll_02",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "mass": 0.5,
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1063"
+                        },
+                        "kinematic": true,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1066": {
+            "link": {
+                "name": "SM_Item_ToiletRoll_02",
+                "file": "models\\SM_Item_ToiletRoll_02.fbx"
+            },
+            "parent": "1044",
+            "name": "ToiletRoll_03",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "mass": 0.5,
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1063"
+                        },
+                        "kinematic": true,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1067": {
+            "link": {
+                "name": "SM_Item_ToiletRoll_02",
+                "file": "models\\SM_Item_ToiletRoll_02.fbx"
+            },
+            "parent": "1044",
+            "name": "ToiletRoll_04",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "mass": 0.5,
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1063"
+                        },
+                        "kinematic": true,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
+            ]
+        },
+        "1068": {
+            "link": {
+                "name": "SM_Item_ToiletRoll_02",
+                "file": "models\\SM_Item_ToiletRoll_02.fbx"
+            },
+            "parent": "1044",
+            "name": "ToiletRoll_05",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "751"
+                    }
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "mass": 0.5,
+                        "shape": "convexMesh",
+                        "convexMesh": {
+                            "mesh": "1063"
+                        },
+                        "kinematic": true,
+                        "linearDamping": 1.0,
+                        "angularDamping": 1.0
+                    }
+                }
             ]
         }
     },
@@ -7358,6 +7979,27 @@
                 "name": "Mesh-uv1",
                 "file": "models\\Boy.fbx"
             }
+        },
+        "1047": {
+            "link": {
+                "name": "SM_Item_Drink_01",
+                "file": "models\\SM_Item_Drink_01.fbx"
+            },
+            "importScaling": 0.0099999
+        },
+        "1055": {
+            "link": {
+                "name": "SM_Item_Drink_02",
+                "file": "models\\SM_Item_Drink_02.fbx"
+            },
+            "importScaling": 0.0099999
+        },
+        "1063": {
+            "link": {
+                "name": "SM_Item_ToiletRoll_02",
+                "file": "models\\SM_Item_ToiletRoll_02.fbx"
+            },
+            "importScaling": 0.0099999
         }
     },
     "textures": {
@@ -7456,6 +8098,24 @@
             "link": {
                 "name": "texture_0",
                 "file": "models\\Boy.fbx"
+            }
+        },
+        "1045": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\SM_Item_Drink_01.fbx"
+            }
+        },
+        "1053": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\SM_Item_Drink_02.fbx"
+            }
+        },
+        "1061": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\SM_Item_ToiletRoll_02.fbx"
             }
         }
     },
@@ -7993,6 +8653,24 @@
                 "file": "models\\Boy.fbx"
             },
             "pipeline": "35"
+        },
+        "1046": {
+            "link": {
+                "name": "lambert1",
+                "file": "models\\SM_Item_Drink_01.fbx"
+            }
+        },
+        "1054": {
+            "link": {
+                "name": "lambert1",
+                "file": "models\\SM_Item_Drink_02.fbx"
+            }
+        },
+        "1062": {
+            "link": {
+                "name": "lambert1",
+                "file": "models\\SM_Item_ToiletRoll_02.fbx"
+            }
         }
     },
     "shaders": {
@@ -8125,6 +8803,9 @@
         },
         "editor": {
             "serverPort": 7551
+        },
+        "physx": {
+            "enable": true
         }
     },
     "animations": {
@@ -8245,6 +8926,9 @@
         "models/house.fbx",
         "models/Splash.png",
         "models/SK_Character_SchoolBoy_01.fbx",
-        "models/Boy.fbx"
+        "models/Boy.fbx",
+        "models/SM_Item_Drink_01.fbx",
+        "models/SM_Item_Drink_02.fbx",
+        "models/SM_Item_ToiletRoll_02.fbx"
     ]
 }
