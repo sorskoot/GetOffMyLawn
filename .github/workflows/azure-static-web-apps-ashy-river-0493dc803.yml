@@ -32,7 +32,7 @@ jobs:
         with:
           name: GetOffMyLawn-deploy
           path: deploy/
- deploy:
+  deploy:
     needs: package
     runs-on: ubuntu-latest
     steps:
