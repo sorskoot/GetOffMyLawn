@@ -1,3 +1,5 @@
+import { Sounds } from "./utils/soundfx-player";
+
 WL.registerComponent('spray', {
     water: {type: WL.Type.Object}
 }, {
@@ -13,6 +15,7 @@ WL.registerComponent('spray', {
                 if (e.inputSource.handedness === this.input.handedness) {                    
                     this.waterMesh.active = true;
                     window.GetOffMyLawn.gameState.isSpraying = true;
+                    GetOffMyLawn.soundFxPlayer.playSoundLoopStart(Sounds.spray);                    
                 }
             });
             session.addEventListener('selectend', (e) => {
@@ -20,6 +23,7 @@ WL.registerComponent('spray', {
                 if (e.inputSource.handedness === this.input.handedness) {                    
                     this.waterMesh.active = false;
                     window.GetOffMyLawn.gameState.isSpraying = false;
+                    GetOffMyLawn.soundFxPlayer.playSoundLoopEnd();
                 }
             });
             this.initialized = true;
