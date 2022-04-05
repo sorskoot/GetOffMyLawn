@@ -15,6 +15,7 @@ export class GameState {
         this.isInVRSubject = new Subject();        
         this.isSprayingSubject = new Subject();        
         this.stateSubject = new Subject();
+        this.scoreSubject = new Subject(); 
     }
 
     _state = State.Init;    
@@ -43,5 +44,13 @@ export class GameState {
     get isSpraying() {
         return this._isSpraying;
     }
-    
+
+    _score = 0;
+    set score(value) {
+        this._score = value;        
+        this.scoreSubject.next(value);
+    }
+    get score() {
+        return this._score;
+    }    
 }

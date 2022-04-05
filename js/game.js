@@ -13,6 +13,7 @@ WL.registerComponent('game', {
     },
     start: function() {
         GetOffMyLawn.gameState.state = State.Title;
+        GetOffMyLawn.gameState.score = 0;
     },
     update: function(dt) {
   

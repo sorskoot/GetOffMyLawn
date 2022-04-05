@@ -14,6 +14,11 @@ WL.registerComponent('splash-handler', {
     },
     onHover: function(_, cursor) {
         this.mesh.active = window.GetOffMyLawn.gameState.isSpraying;   
+        
+        const kid = this.object.parent.getComponent('kid');
+        if(kid){
+            kid.hit();            
+        }
     },
     onUnHover: function(_, cursor) {
         this.mesh.active = false;   

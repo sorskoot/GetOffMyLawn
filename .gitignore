@@ -106,3 +106,4 @@ dist
 deploy/
 imgui.ini
 **_Bake*
+**.asd
