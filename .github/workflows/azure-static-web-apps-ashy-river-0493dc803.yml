@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     container:
-      image: wonderlandengine/editor:edge
+      image: wonderlandengine/editor:edge-node
     steps:
       - name: Checkout repository and submodules
         uses: actions/checkout@v2        
