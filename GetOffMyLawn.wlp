@@ -1435,7 +1435,10 @@
             "name": "Managers",
             "components": [
                 {
-                    "type": "game"
+                    "type": "game",
+                    "game": {
+                        "playerObject": "14"
+                    }
                 }
             ]
         },
@@ -6406,7 +6409,7 @@
         },
         "1070": {
             "name": "Title",
-            "parent": "1069",
+            "parent": "1081",
             "components": [
                 {
                     "type": "mesh",
@@ -6414,7 +6417,29 @@
                         "mesh": "7",
                         "material": "1071"
                     },
-                    "active": false
+                    "active": true
+                },
+                {
+                    "type": "handle-play",
+                    "handle-play": {
+                        "gameObject": "222"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                3.0,
+                                1.0,
+                                0.0099999
+                            ]
+                        }
+                    }
                 }
             ],
             "transformation": [
@@ -6431,14 +6456,14 @@
                 1.0,
                 0.0,
                 0.0,
-                1.3933138,
+                1.3933137,
                 -3.0240921,
                 1.0
             ]
         },
         "1074": {
             "name": "GameOver",
-            "parent": "1069",
+            "parent": "1082",
             "components": [
                 {
                     "type": "mesh",
@@ -6447,6 +6472,28 @@
                         "material": "1075"
                     },
                     "active": false
+                },
+                {
+                    "type": "handle-play",
+                    "handle-play": {
+                        "gameObject": "222"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                3.0,
+                                1.0,
+                                0.0099999
+                            ]
+                        }
+                    }
                 }
             ],
             "transformation": [
@@ -6463,14 +6510,14 @@
                 1.0,
                 0.0,
                 0.0,
-                1.3933138,
+                1.3933137,
                 -2.8670611,
                 1.0
             ]
         },
         "1078": {
             "name": "GameUI",
-            "parent": "1069",
+            "parent": "1083",
             "transformation": [
                 2.0,
                 0.0,
@@ -6484,7 +6531,7 @@
                 0.0,
                 2.0,
                 0.0,
-                -0.7511279,
+                -0.7511278,
                 1.4044263,
                 -4.3970208,
                 1.0
@@ -6553,6 +6600,133 @@
                 0.0,
                 0.0,
                 1.0
+            ]
+        },
+        "1081": {
+            "name": "TitleRoot",
+            "parent": "1069",
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "show-on-gamestate",
+                    "show-on-gamestate": {
+                        "affectChildren": false,
+                        "visibleState": "Title"
+                    }
+                }
+            ]
+        },
+        "1082": {
+            "name": "GameOverRoot",
+            "parent": "1069",
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "show-on-gamestate",
+                    "show-on-gamestate": {
+                        "activateComponents": "end",
+                        "visibleState": "End"
+                    }
+                }
+            ]
+        },
+        "1083": {
+            "name": "GameUIRoot",
+            "parent": "1069",
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "show-on-gamestate",
+                    "show-on-gamestate": {
+                        "affectChildren": true,
+                        "activateComponents": "playing",
+                        "visibleState": "Playing"
+                    }
+                }
             ]
         }
     },
@@ -8959,7 +9133,8 @@
                 0,
                 8,
                 10
-            ]
+            ],
+            "customIndexHtml": true
         },
         "vr": {
             "leftEyeObject": "18",

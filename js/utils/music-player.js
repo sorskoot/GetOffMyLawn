@@ -21,7 +21,7 @@ export class MusicPlayer{
             // new Audio('Music/title.mp3')
         ];
         this.currentSong = new Audio();        
-        this.currentSong.muted = true;
+        
         this.isPlaying = false;
         this.firstTime = true;
         GetOffMyLawn.gameState.isInVRSubject.subscribe(isInVR => {
@@ -34,8 +34,9 @@ export class MusicPlayer{
             if(!this.isPlaying) return;
             if(isInVR) {
                 this.currentSong.play();
+        
             }else{
-                this.currentSong.muted = true;
+        
                 this.currentSong.pause();
             }
         });
@@ -44,19 +45,18 @@ export class MusicPlayer{
            this.checkState();
         });
 
-    
+        this.checkState();
     }
 
     checkState(){
         switch(GetOffMyLawn.gameState.state) {
             case State.Title:
                 // this.playMusic(Songs.title);
-                // break;
+                break;
             case State.Playing:
-                // this.playMusic(Songs.gameplay);
-                // break;
-            case State.Complete:
                 this.playMusic(Songs.complete);
+                break;
+            case State.Complete:           
                 break;
             default:
                 this.currentSong.pause();

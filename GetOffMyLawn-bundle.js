@@ -20,6 +20,9 @@ require('./js/spray');
 require('./js/spawner');
 require('./js/kid');
 require('./js/kidsHitScoreUpdater');
+require('./js/handle-play');
+require('./js/button-controller');
+require('./js/show-on-gamestate');
 
 window.GetOffMyLawn = {
     gameState: new GameState(),    
