@@ -1,4 +1,3 @@
-const { registerComponent } = require("@wonderlandengine/api");
 const { Sounds } = require("./utils/soundfx-player");
 
 WL.registerComponent('kid', {
@@ -36,8 +35,9 @@ WL.registerComponent('kid', {
             pos[1] = Math.sin(this.t / 2.0 * Math.PI) * 1.5;
             this.object.setTranslationWorld(pos);
         }
-        if (this.t > 1.2 && !this.thrown && !this.isHit) {
-            GetOffMyLawn.soundFxPlayer.playSound(Sounds.throw);
+        if (this.t > 1.2 && !this.thrown && !this.isHit) {              
+            window.GetOffMyLawn.soundFxPlayer.playSound(Sounds.throw);
+            window.GetOffMyLawn.gameState.junkThrown ++ ;            
             let physx = this.throwing.getComponent('physx');
             this.throwing.getComponent('mesh').active = true;
             physx.kinematic = false;

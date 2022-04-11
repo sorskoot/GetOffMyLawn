@@ -1437,7 +1437,8 @@
                 {
                     "type": "game",
                     "game": {
-                        "playerObject": "14"
+                        "playerObject": "14",
+                        "maxJunk": 10
                     }
                 }
             ]
@@ -6471,7 +6472,7 @@
                         "mesh": "7",
                         "material": "1075"
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "handle-play",

@@ -16,6 +16,7 @@ export class GameState {
         this.isSprayingSubject = new Subject();        
         this.stateSubject = new Subject();
         this.scoreSubject = new Subject(); 
+        this.junkThrownSubject = new Subject(); 
     }
 
     _state = State.Init;    
@@ -53,4 +54,13 @@ export class GameState {
     get score() {
         return this._score;
     }    
+
+    _junkThrown = 0;
+    set junkThrown(value) {
+        this._junkThrown = value;        
+        this.junkThrownSubject.next(value);
+    }
+    get junkThrown() {
+        return this._junkThrown;
+    }
 }
