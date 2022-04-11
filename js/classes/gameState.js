@@ -17,6 +17,8 @@ export class GameState {
         this.stateSubject = new Subject();
         this.scoreSubject = new Subject(); 
         this.junkThrownSubject = new Subject(); 
+
+        this.interval = 3000;
     }
 
     _state = State.Init;    
@@ -63,4 +65,6 @@ export class GameState {
     get junkThrown() {
         return this._junkThrown;
     }
+
+    
 }

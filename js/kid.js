@@ -3,6 +3,7 @@ const { Sounds } = require("./utils/soundfx-player");
 WL.registerComponent('kid', {
     animatedObject: { type: WL.Type.Object },
     throwablesParent: { type: WL.Type.Object },
+    thrownParent: { type: WL.Type.Object },
 }, {
 
     init: function () {
@@ -52,7 +53,7 @@ WL.registerComponent('kid', {
             }, 2500);
             physx.addForce([0, 0, (400 + (Math.random() * 400)) * 2]);
             physx.addTorque([0, 0, 500 * 2]);
-            this.throwing.parent = null;
+            this.throwing.parent = this.thrownParent;
             this.thrown = true;
         }
 
