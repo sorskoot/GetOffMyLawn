@@ -96,7 +96,10 @@
             "parent": "205",
             "components": [
                 {
-                    "type": "view"
+                    "type": "view",
+                    "view": {
+                        "far": 200.0
+                    }
                 },
                 {
                     "type": "mouse-look"
@@ -133,7 +136,10 @@
             "parent": "205",
             "components": [
                 {
-                    "type": "view"
+                    "type": "view",
+                    "view": {
+                        "far": 200.0
+                    }
                 },
                 {
                     "type": "input",
@@ -166,7 +172,10 @@
             "parent": "205",
             "components": [
                 {
-                    "type": "view"
+                    "type": "view",
+                    "view": {
+                        "far": 200.0
+                    }
                 },
                 {
                     "type": "input",
@@ -8965,6 +8974,80 @@
                 37.5535278,
                 1.0
             ]
+        },
+        "1296": {
+            "name": "Mesh.004",
+            "parent": "219",
+            "components": [
+                {
+                    "type": "mesh"
+                }
+            ],
+            "deleted": true
+        },
+        "1297": {
+            "name": "Empty",
+            "parent": "219",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "1303",
+                        "material": "1300"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0003426,
+                -2.9802320611338474e-8,
+                -0.9999999,
+                0.0,
+                -1.0000061,
+                -0.0000026,
+                -0.0003427,
+                0.0,
+                -0.0000026,
+                1.0000071,
+                -8.940760665154812e-8,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "1302": {
+            "link": {
+                "name": "Icosphere",
+                "file": "models\\Sky.fbx"
+            },
+            "parent": "1297",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "1304": {
+            "link": {
+                "name": "Sphere",
+                "file": "models\\Sky.fbx"
+            },
+            "deleted": true
         }
     },
     "meshes": {
@@ -10566,6 +10649,18 @@
                 "file": "models\\SM_Item_ToiletRoll_02.fbx"
             },
             "importScaling": 0.0099999
+        },
+        "1301": {
+            "link": {
+                "name": "Icosphere",
+                "file": "models\\Sky.fbx"
+            }
+        },
+        "1303": {
+            "link": {
+                "name": "Sphere.001",
+                "file": "models\\Sky.fbx"
+            }
         }
     },
     "textures": {
@@ -10694,6 +10789,12 @@
             "link": {
                 "name": "game-over.png",
                 "file": "models\\game-over.png"
+            }
+        },
+        "1299": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\Sky.fbx"
             }
         }
     },
@@ -10900,6 +11001,18 @@
                 "name": "game-over.png",
                 "file": "models\\game-over.png"
             }
+        },
+        "1298": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\Sky.fbx"
+            },
+            "maxSize": [
+                4096,
+                2160
+            ],
+            "compress": false,
+            "name": "Sky"
         }
     },
     "materials": {
@@ -11281,6 +11394,16 @@
             "Flat": {
                 "flatTexture": "1077"
             }
+        },
+        "1300": {
+            "link": {
+                "name": "Material.001",
+                "file": "models\\Sky.fbx"
+            },
+            "pipeline": "35",
+            "Flat": {
+                "flatTexture": "1299"
+            }
         }
     },
     "shaders": {
@@ -11413,7 +11536,10 @@
             ]
         },
         "editor": {
-            "serverPort": 7551
+            "serverPort": 7551,
+            "camera": {
+                "far": 200.0
+            }
         },
         "physx": {
             "enable": true
@@ -11735,6 +11861,7 @@
         "models/SM_Item_Drink_02.fbx",
         "models/SM_Item_ToiletRoll_02.fbx",
         "models/Get-off-my-lawn.png",
-        "models/game-over.png"
+        "models/game-over.png",
+        "models/Sky.fbx"
     ]
 }
