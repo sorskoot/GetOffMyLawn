@@ -251,7 +251,8 @@
                             0.8055876,
                             1.0
                         ]
-                    }
+                    },
+                    "active": true
                 }
             ],
             "transformation": [
@@ -6557,9 +6558,9 @@
                 0.0,
                 2.0,
                 0.0,
-                -0.7511278,
+                -0.7511277,
                 1.4044263,
-                -4.3970208,
+                -4.3346843,
                 1.0
             ]
         },
@@ -9052,6 +9053,71 @@
                 "file": "models\\Sky.fbx"
             },
             "deleted": true
+        },
+        "1305": {
+            "name": "Text_TrashOnLawn",
+            "parent": "1078",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Trash on lawn:",
+                        "alignment": "left"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.1083866,
+                0.0007617,
+                0.0,
+                1.0
+            ]
+        },
+        "1306": {
+            "name": "Text_Trash",
+            "parent": "1078",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "2\n",
+                        "alignment": "left"
+                    }
+                },
+                {
+                    "type": "trash-on-lawn-updater"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.8762388,
+                0.0007617,
+                0.0,
+                1.0
+            ]
         }
     },
     "meshes": {

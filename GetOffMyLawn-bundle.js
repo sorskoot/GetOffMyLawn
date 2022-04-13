@@ -24,6 +24,7 @@ require('./js/handle-play');
 require('./js/button-controller');
 require('./js/show-on-gamestate');
 require('./js/retarget-animation');
+require('./js/trash-on-lawn-updater');
 
 window.GetOffMyLawn = {
     gameState: new GameState(),    
