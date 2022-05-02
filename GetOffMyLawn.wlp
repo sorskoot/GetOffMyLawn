@@ -951,7 +951,8 @@
                 1.5585094,
                 1.0
             ],
-            "parent": "218"
+            "parent": "218",
+            "deleted": true
         },
         "129": {
             "name": "ControllerRight",
@@ -1005,11 +1006,15 @@
                     "type": "input",
                     "input": {
                         "type": "hand right"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "vr-mode-active-switch",
-                    "active": true
+                    "active": false,
+                    "vr-mode-active-switch": {
+                        "affectChildren": false
+                    }
                 }
             ]
         },
@@ -1124,7 +1129,8 @@
                 1.3311299,
                 1.0
             ],
-            "parent": "218"
+            "parent": "218",
+            "deleted": true
         },
         "209": {
             "name": "CursorRayLeft",
@@ -1202,7 +1208,8 @@
                         "cursorObject": "215",
                         "collisionGroup": 0,
                         "cursorRayObject": "213",
-                        "cursorRayScalingAxis": "y"
+                        "cursorRayScalingAxis": "y",
+                        "handedness": "input component"
                     }
                 },
                 {

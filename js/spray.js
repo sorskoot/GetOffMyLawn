@@ -8,11 +8,15 @@ WL.registerComponent('spray', {
         this.waterMesh.active = false;
         this.input = this.object.getComponent('input');
         this.initialized = false;
+        WL.onXRSessionEnd.push(() => {
+            this.initialized=false;
+        });
         WL.onXRSessionStart.push((session) => {
             if (this.initialized) return;
-            session.addEventListener('selectstart', (e) => {
-                if(!this.active) return;
+            session.addEventListener('selectstart', (e) => {                
+                if(!this.active) return;                
                 if (e.inputSource.handedness === this.input.handedness) {                    
+                    console.log('selectstart');
                     this.waterMesh.active = true;
                     window.GetOffMyLawn.gameState.isSpraying = true;
                     GetOffMyLawn.soundFxPlayer.playSoundLoopStart(Sounds.spray);                    
@@ -20,7 +24,9 @@ WL.registerComponent('spray', {
             });
             session.addEventListener('selectend', (e) => {
                 if(!this.active) return;
+                
                 if (e.inputSource.handedness === this.input.handedness) {                    
+                    console.log('selectend');
                     this.waterMesh.active = false;
                     window.GetOffMyLawn.gameState.isSpraying = false;
                     GetOffMyLawn.soundFxPlayer.playSoundLoopEnd();
