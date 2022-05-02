@@ -24,10 +24,11 @@ WL.registerComponent('game', {
         });
 
         window.GetOffMyLawn.gameState.isInVRSubject.subscribe(isInVR=>{
-            if(isInVR && window.GetOffMyLawn.gameState.state==State.Playing){
-                window.GetOffMyLawn.gameState.state = State.Pause;   
-            }else if(!isInVR && window.GetOffMyLawn.gameState.state==State.Pause){
+            if(isInVR && window.GetOffMyLawn.gameState.state==State.Pause){
                 window.GetOffMyLawn.gameState.state = State.Playing;   
+            }else if(!isInVR 
+                && window.GetOffMyLawn.gameState.state == State.Playing){
+                window.GetOffMyLawn.gameState.state = State.Pause;   
             }
             
         })
