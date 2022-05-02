@@ -23,6 +23,7 @@ require('./js/kidsHitScoreUpdater');
 require('./js/handle-play');
 require('./js/button-controller');
 require('./js/show-on-gamestate');
+require('./js/hide-on-vrstate');
 require('./js/retarget-animation');
 require('./js/trash-on-lawn-updater');
 

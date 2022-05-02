@@ -102,7 +102,8 @@
                     }
                 },
                 {
-                    "type": "mouse-look"
+                    "type": "mouse-look",
+                    "active": false
                 },
                 {
                     "type": "cursor",
@@ -3754,7 +3755,7 @@
                     "type": "mesh",
                     "mesh": {
                         "mesh": "10",
-                        "material": "20"
+                        "material": "1310"
                     }
                 }
             ],
@@ -9118,6 +9119,222 @@
                 0.0,
                 1.0
             ]
+        },
+        "1307": {
+            "name": "ZestyAd",
+            "parent": "1081",
+            "components": [
+                {
+                    "type": "zesty-banner",
+                    "zesty-banner": {
+                        "creator": "0x247332f68a529ab11a65d665cf84ca376a24688a",
+                        "space": 157,
+                        "format": "wide",
+                        "style": "standard",
+                        "beacon": true
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "1308"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                1.0,
+                                0.25,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2165061,
+                -0.1250004,
+                0.0,
+                0.0,
+                0.5000012,
+                0.8660238,
+                0.0,
+                0.0,
+                0.5159642,
+                -2.8517179,
+                1.0
+            ]
+        },
+        "1309": {
+            "name": "AdContainer",
+            "parent": "1069",
+            "components": [
+                {
+                    "type": "hide-on-gamestate",
+                    "hide-on-gamestate": {
+                        "visibleState": "Playing"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "1311": {
+            "name": "ZestyAd",
+            "parent": "1082",
+            "components": [
+                {
+                    "type": "zesty-banner",
+                    "zesty-banner": {
+                        "creator": "0x247332f68a529ab11a65d665cf84ca376a24688a",
+                        "space": 157,
+                        "format": "wide",
+                        "style": "standard",
+                        "beacon": true
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "1308"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                1.0,
+                                0.25,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2165061,
+                -0.1250004,
+                0.0,
+                0.0,
+                0.5000012,
+                0.8660238,
+                0.0,
+                0.0,
+                0.5159642,
+                -2.8517179,
+                1.0
+            ]
+        },
+        "1312": {
+            "name": "ZestyAd",
+            "parent": "1313",
+            "components": [
+                {
+                    "type": "zesty-banner",
+                    "zesty-banner": {
+                        "creator": "0x247332f68a529ab11a65d665cf84ca376a24688a",
+                        "space": 157,
+                        "format": "wide",
+                        "style": "standard",
+                        "beacon": true
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "1308"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.5,
+                                0.125,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.125,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9999992,
+                0.0,
+                -1.5311946,
+                0.9977644,
+                -2.4008262,
+                1.0
+            ]
+        },
+        "1313": {
+            "name": "NotInVR",
+            "parent": "1069",
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "hide-on-vrstate"
+                }
+            ]
         }
     },
     "meshes": {
@@ -11473,6 +11690,36 @@
             "pipeline": "35",
             "Flat": {
                 "flatTexture": "1299"
+            }
+        },
+        "1308": {
+            "name": "ZestyAd",
+            "pipeline": "35"
+        },
+        "1310": {
+            "name": "Water",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    0.5450925,
+                    0.5450946,
+                    0.545098,
+                    1.0
+                ],
+                "shininess": 255,
+                "diffuseColor": [
+                    0.245121,
+                    0.5074902,
+                    0.9921568,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.2983006,
+                    0.3873767,
+                    0.6392157,
+                    1.0
+                ],
+                "ambientFactor": 0.1
             }
         }
     },

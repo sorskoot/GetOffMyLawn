@@ -23,9 +23,9 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "@wonderlandengine/api": "^0.8.9",
+    "@wonderlandengine/api": "^0.8.10",
     "@wonderlandengine/components": "^0.8.16",
-    "@zestymarket/wonderland-sdk": "^1.4.6",
+    "@zestymarket/wonderland-sdk": "^1.5.1",
     "gl-matrix": "^3.4.3",
     "http-server": "^14.1.0",
     "rxjs": "^7.5.2"
