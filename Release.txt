@@ -1,0 +1,15 @@
+Title: Get off my lawn!
+
+Prefered URL: https://constructarcade.com/game/get-off-my-lawn
+
+Short Description:
+    Use your water hose to prevent the neighbor kids from throwing trash on your beautiful lawn!
+
+Tags: #arcade
+
+Supported input:
+    6-dof
+
+Long Description:
+	In this game, you are the grumpy old neighbor and those darn kids from around the neighborhood are throwing trash on your beautiful lawn again! Luckily you are armed with your precious water hose. Make sure you spray them soaking wet before they throw their trash.l
+

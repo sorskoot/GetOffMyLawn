@@ -1308,20 +1308,28 @@
                         "mesh": "7",
                         "material": "789"
                     }
+                },
+                {
+                    "type": "flipbook",
+                    "flipbook": {
+                        "base": "789",
+                        "url": "splash.png",
+                        "duration": 0.6999999
+                    }
                 }
             ],
             "transformation": [
-                0.5,
+                2.0,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                0.5,
+                2.0,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                0.5,
+                2.0,
                 0.0,
                 0.0,
                 0.0,
@@ -6452,7 +6460,7 @@
                         "mesh": "7",
                         "material": "1071"
                     },
-                    "active": true
+                    "active": false
                 },
                 {
                     "type": "handle-play",
@@ -9146,7 +9154,8 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "1308"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "collision",
@@ -9267,7 +9276,8 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "1308"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "collision",
