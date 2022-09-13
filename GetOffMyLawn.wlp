@@ -4882,13 +4882,15 @@
             "link": {
                 "name": "Get-off-my-lawn.png",
                 "file": "models\\Get-off-my-lawn.png"
-            }
+            },
+            "compress": false
         },
         "1076": {
             "link": {
                 "name": "game-over.png",
                 "file": "models\\game-over.png"
-            }
+            },
+            "compress": false
         },
         "1298": {
             "link": {
