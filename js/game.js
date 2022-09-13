@@ -7,7 +7,9 @@ WL.registerComponent('game', {
     throwableParent: { type: WL.Type.Object },
 }, {
     init: function () {
-        document.getElementById('afterLoading').style.display = 'block';
+        const afterLoadingEl = document.getElementById('afterLoading');
+        if(afterLoadingEl) afterLoadingEl.style.display = 'block';
+
         WL.onXRSessionStart.push(() => GetOffMyLawn.gameState.isInVR = true);
         WL.onXRSessionEnd.push(() => GetOffMyLawn.gameState.isInVR = false);
         WL.onXRSessionStart.push(() => {

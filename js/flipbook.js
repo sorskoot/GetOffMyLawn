@@ -15,7 +15,7 @@ class DynamicTextureCache {
                     context.drawImage(image, 0, 0);
                     let spriteWidth = image.width / columns;
                     let spriteHeight = image.height / rows;
-                    
+
                     for (let y = 0; y < rows; y++) {
                         for (let x = 0; x < columns; x++) {
                             let pc = this.copyPartOfCanvas(canvas, x * spriteWidth, y * spriteHeight, spriteWidth, spriteHeight);
@@ -36,7 +36,6 @@ class DynamicTextureCache {
         copy.height = height;
         let ctx2 = copy.getContext("2d");
         ctx2.drawImage(canvas, x, y, width, height, 0, 0, width, height);
-        document.body.appendChild(copy)
         return copy;
     }
 }
@@ -100,7 +99,6 @@ WL.registerComponent('flipbook', {
         }
 
         this.index = frame % this.textures.length;
-        console.log(frame)
         if (this.textures && this.textures.length && this.previousIndex != this.index) {
             this.previousIndex = this.index;
             this.mesh.material = this.textures[this.index];
