@@ -7,6 +7,7 @@ WL.registerComponent('game', {
     throwableParent: { type: WL.Type.Object },
 }, {
     init: function () {
+        console.log("Game init");
         const afterLoadingEl = document.getElementById('afterLoading');
         if(afterLoadingEl) afterLoadingEl.style.display = 'block';
 

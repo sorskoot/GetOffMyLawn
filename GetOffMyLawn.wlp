@@ -287,13 +287,14 @@
                 1.0,
                 0.0,
                 0.0,
-                1.75,
+                0.0,
                 0.0,
                 1.0
             ],
             "components": [
                 {
-                    "type": "player-height"
+                    "type": "player-height",
+                    "active": true
                 }
             ]
         },
@@ -1636,7 +1637,7 @@
                         "mesh": "7",
                         "material": "1071"
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "handle-play",
@@ -4865,7 +4866,11 @@
                 "name": "Splash.png",
                 "file": "models\\Splash.png"
             },
-            "compress": false
+            "compress": true,
+            "maxSize": [
+                125,
+                106
+            ]
         },
         "997": {
             "link": {
@@ -4873,24 +4878,32 @@
                 "file": "models\\Boy.fbx"
             },
             "maxSize": [
-                512,
-                512
+                2048,
+                2048
             ],
-            "compress": false
+            "compress": true
         },
         "1072": {
             "link": {
                 "name": "Get-off-my-lawn.png",
                 "file": "models\\Get-off-my-lawn.png"
             },
-            "compress": false
+            "compress": true,
+            "maxSize": [
+                1702,
+                242
+            ]
         },
         "1076": {
             "link": {
                 "name": "game-over.png",
                 "file": "models\\game-over.png"
             },
-            "compress": false
+            "compress": true,
+            "maxSize": [
+                1075,
+                242
+            ]
         },
         "1298": {
             "link": {
@@ -5284,9 +5297,15 @@
         },
         "1071": {
             "name": "Title",
-            "pipeline": "792",
+            "pipeline": "35",
             "Flat": {
-                "flatTexture": "1073"
+                "flatTexture": "1073",
+                "color": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "1075": {
@@ -5468,9 +5487,9 @@
             "version": [
                 0,
                 9,
-                1
+                2
             ],
-            "customIndexHtml": false
+            "customIndexHtml": true
         },
         "vr": {
             "leftEyeObject": "18",
