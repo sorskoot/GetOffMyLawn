@@ -1664,7 +1664,7 @@
                 }
             ],
             "transformation": [
-                2.0,
+                2.5,
                 0.0,
                 0.0,
                 0.0,
@@ -1677,7 +1677,7 @@
                 1.0,
                 0.0,
                 0.0,
-                1.3933137,
+                1.3933136,
                 -3.0240921,
                 1.0
             ]
@@ -1692,7 +1692,7 @@
                         "mesh": "7",
                         "material": "1075"
                     },
-                    "active": true
+                    "active": false
                 },
                 {
                     "type": "handle-play",
@@ -1903,7 +1903,8 @@
                     "show-on-gamestate": {
                         "activateComponents": "end",
                         "visibleState": "End"
-                    }
+                    },
+                    "active": true
                 }
             ]
         },
@@ -4692,7 +4693,11 @@
             "link": {
                 "name": "DefaultImage",
                 "file": "default"
-            }
+            },
+            "maxSize": [
+                2,
+                2
+            ]
         },
         "42": {
             "link": {
@@ -4891,8 +4896,8 @@
             },
             "compress": true,
             "maxSize": [
-                1702,
-                242
+                2048,
+                512
             ]
         },
         "1076": {
@@ -4902,8 +4907,8 @@
             },
             "compress": true,
             "maxSize": [
-                1075,
-                242
+                2048,
+                512
             ]
         },
         "1298": {
@@ -4913,7 +4918,7 @@
             },
             "maxSize": [
                 4096,
-                2160
+                2048
             ],
             "compress": true,
             "name": "Sky"
