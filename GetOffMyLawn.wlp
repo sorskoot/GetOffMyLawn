@@ -352,7 +352,8 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "789"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "flipbook",
