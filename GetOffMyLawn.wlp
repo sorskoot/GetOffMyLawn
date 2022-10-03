@@ -1664,7 +1664,7 @@
                 }
             ],
             "transformation": [
-                2.5,
+                2.0,
                 0.0,
                 0.0,
                 0.0,
@@ -1677,7 +1677,7 @@
                 1.0,
                 0.0,
                 0.0,
-                1.3933136,
+                1.3933137,
                 -3.0240921,
                 1.0
             ]
@@ -1692,7 +1692,7 @@
                         "mesh": "7",
                         "material": "1075"
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "handle-play",
@@ -1954,714 +1954,6 @@
         "1084": {
             "name": "ThrownParent",
             "parent": "219"
-        },
-        "1086": {
-            "name": "Boy",
-            "parent": "786",
-            "transformation": [
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                -8.9834156,
-                1.0
-            ],
-            "components": [
-                {
-                    "type": "kid",
-                    "kid": {
-                        "animatedObject": "1089",
-                        "throwablesParent": "1044",
-                        "throwableNewParent": "219",
-                        "thrownParent": "1084"
-                    }
-                }
-            ]
-        },
-        "1087": {
-            "name": "Mesh.001",
-            "parent": "1086",
-            "components": [
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                0.25,
-                                0.75,
-                                0.25
-                            ]
-                        }
-                    }
-                },
-                {
-                    "type": "splash-handler",
-                    "splash-handler": {
-                        "cursorObject": "215"
-                    }
-                }
-            ],
-            "transformation": [
-                24.9996604,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                24.9996604,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                24.9996604,
-                0.0,
-                0.0,
-                88.7786178,
-                37.5535278,
-                1.0
-            ]
-        },
-        "1088": {
-            "link": {
-                "name": "SK_Character_SchoolBoy_01",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1086",
-            "components": [
-                {
-                    "mesh": {
-                        "skin": "1327"
-                    }
-                }
-            ],
-            "name": "SK_Character_SchoolBoy_02"
-        },
-        "1089": {
-            "link": {
-                "name": "Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1086",
-            "components": [
-                {
-                    "animation": {
-                        "preview": false,
-                        "autoplay": false,
-                        "retarget": false,
-                        "animation": "1035"
-                    }
-                },
-                {
-                    "type": "retarget-animation",
-                    "retarget-animation": {
-                        "jumpAnimation": "1035",
-                        "bodyMeshObject": "1088"
-                    }
-                }
-            ],
-            "name": "Armature2"
-        },
-        "1090": {
-            "link": {
-                "name": "mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1089",
-            "skin": "1120"
-        },
-        "1091": {
-            "link": {
-                "name": "mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1090",
-            "skin": "1120"
-        },
-        "1092": {
-            "link": {
-                "name": "mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1091",
-            "skin": "1120"
-        },
-        "1093": {
-            "link": {
-                "name": "mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1092",
-            "skin": "1120"
-        },
-        "1094": {
-            "link": {
-                "name": "mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1093",
-            "skin": "1120"
-        },
-        "1095": {
-            "link": {
-                "name": "mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1094",
-            "skin": "1120"
-        },
-        "1096": {
-            "link": {
-                "name": "mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1095",
-            "skin": "1120"
-        },
-        "1097": {
-            "link": {
-                "name": "mixamorig:HeadTop_End_end<mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1096"
-        },
-        "1098": {
-            "link": {
-                "name": "mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1093",
-            "skin": "1120"
-        },
-        "1099": {
-            "link": {
-                "name": "mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1098",
-            "skin": "1120"
-        },
-        "1100": {
-            "link": {
-                "name": "mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1099",
-            "skin": "1120"
-        },
-        "1101": {
-            "link": {
-                "name": "mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1100",
-            "skin": "1120"
-        },
-        "1102": {
-            "link": {
-                "name": "mixamorig:LeftHand_end<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1101"
-        },
-        "1103": {
-            "link": {
-                "name": "mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1093",
-            "skin": "1120"
-        },
-        "1104": {
-            "link": {
-                "name": "mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1103",
-            "skin": "1120"
-        },
-        "1105": {
-            "link": {
-                "name": "mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1104",
-            "skin": "1120"
-        },
-        "1106": {
-            "link": {
-                "name": "mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1105",
-            "skin": "1120"
-        },
-        "1107": {
-            "link": {
-                "name": "mixamorig:RightHand_end<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1106"
-        },
-        "1108": {
-            "link": {
-                "name": "mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1090",
-            "skin": "1120"
-        },
-        "1109": {
-            "link": {
-                "name": "mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1108",
-            "skin": "1120"
-        },
-        "1110": {
-            "link": {
-                "name": "mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1109",
-            "skin": "1120"
-        },
-        "1111": {
-            "link": {
-                "name": "mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1110",
-            "skin": "1120"
-        },
-        "1112": {
-            "link": {
-                "name": "mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1111",
-            "skin": "1120"
-        },
-        "1113": {
-            "link": {
-                "name": "mixamorig:LeftToe_End_end<mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1112"
-        },
-        "1114": {
-            "link": {
-                "name": "mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1090",
-            "skin": "1120"
-        },
-        "1115": {
-            "link": {
-                "name": "mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1114",
-            "skin": "1120"
-        },
-        "1116": {
-            "link": {
-                "name": "mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1115",
-            "skin": "1120"
-        },
-        "1117": {
-            "link": {
-                "name": "mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1116",
-            "skin": "1120"
-        },
-        "1118": {
-            "link": {
-                "name": "mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1117",
-            "skin": "1120"
-        },
-        "1119": {
-            "link": {
-                "name": "mixamorig:RightToe_End_end<mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1118"
-        },
-        "1261": {
-            "name": "Boy",
-            "parent": "786",
-            "transformation": [
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0099999,
-                0.0,
-                0.0,
-                0.0,
-                -6.5148038,
-                1.0
-            ],
-            "components": [
-                {
-                    "type": "kid",
-                    "kid": {
-                        "animatedObject": "1262",
-                        "throwablesParent": "1044",
-                        "throwableNewParent": "219",
-                        "thrownParent": "1084"
-                    }
-                }
-            ]
-        },
-        "1262": {
-            "link": {
-                "name": "Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1261",
-            "components": [
-                {
-                    "animation": {
-                        "preview": false,
-                        "autoplay": false,
-                        "retarget": false,
-                        "animation": "1035"
-                    }
-                },
-                {
-                    "type": "retarget-animation",
-                    "retarget-animation": {
-                        "jumpAnimation": "1035",
-                        "bodyMeshObject": "1293"
-                    }
-                }
-            ],
-            "name": "Armature3"
-        },
-        "1263": {
-            "link": {
-                "name": "mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1262",
-            "skin": "1295"
-        },
-        "1264": {
-            "link": {
-                "name": "mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1263",
-            "skin": "1295"
-        },
-        "1265": {
-            "link": {
-                "name": "mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1264",
-            "skin": "1295"
-        },
-        "1266": {
-            "link": {
-                "name": "mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1265",
-            "skin": "1295"
-        },
-        "1267": {
-            "link": {
-                "name": "mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1266",
-            "skin": "1295"
-        },
-        "1268": {
-            "link": {
-                "name": "mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1267",
-            "skin": "1295"
-        },
-        "1269": {
-            "link": {
-                "name": "mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1268",
-            "skin": "1295"
-        },
-        "1270": {
-            "link": {
-                "name": "mixamorig:HeadTop_End_end<mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1269"
-        },
-        "1271": {
-            "link": {
-                "name": "mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1266",
-            "skin": "1295"
-        },
-        "1272": {
-            "link": {
-                "name": "mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1271",
-            "skin": "1295"
-        },
-        "1273": {
-            "link": {
-                "name": "mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1272",
-            "skin": "1295"
-        },
-        "1274": {
-            "link": {
-                "name": "mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1273",
-            "skin": "1295"
-        },
-        "1275": {
-            "link": {
-                "name": "mixamorig:LeftHand_end<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1274"
-        },
-        "1276": {
-            "link": {
-                "name": "mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1266",
-            "skin": "1295"
-        },
-        "1277": {
-            "link": {
-                "name": "mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1276",
-            "skin": "1295"
-        },
-        "1278": {
-            "link": {
-                "name": "mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1277",
-            "skin": "1295"
-        },
-        "1279": {
-            "link": {
-                "name": "mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1278",
-            "skin": "1295"
-        },
-        "1280": {
-            "link": {
-                "name": "mixamorig:RightHand_end<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1279"
-        },
-        "1281": {
-            "link": {
-                "name": "mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1263",
-            "skin": "1295"
-        },
-        "1282": {
-            "link": {
-                "name": "mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1281",
-            "skin": "1295"
-        },
-        "1283": {
-            "link": {
-                "name": "mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1282",
-            "skin": "1295"
-        },
-        "1284": {
-            "link": {
-                "name": "mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1283",
-            "skin": "1295"
-        },
-        "1285": {
-            "link": {
-                "name": "mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1284",
-            "skin": "1295"
-        },
-        "1286": {
-            "link": {
-                "name": "mixamorig:LeftToe_End_end<mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1285"
-        },
-        "1287": {
-            "link": {
-                "name": "mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1263",
-            "skin": "1295"
-        },
-        "1288": {
-            "link": {
-                "name": "mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1287",
-            "skin": "1295"
-        },
-        "1289": {
-            "link": {
-                "name": "mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1288",
-            "skin": "1295"
-        },
-        "1290": {
-            "link": {
-                "name": "mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1289",
-            "skin": "1295"
-        },
-        "1291": {
-            "link": {
-                "name": "mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1290",
-            "skin": "1295"
-        },
-        "1292": {
-            "link": {
-                "name": "mixamorig:RightToe_End_end<mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1291"
-        },
-        "1293": {
-            "link": {
-                "name": "SK_Character_SchoolBoy_01",
-                "file": "models\\Boy.fbx"
-            },
-            "parent": "1261",
-            "components": [
-                {
-                    "mesh": {
-                        "skin": "1327"
-                    }
-                }
-            ],
-            "name": "SK_Character_SchoolBoy_03"
-        },
-        "1294": {
-            "name": "Mesh.001",
-            "parent": "1261",
-            "components": [
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                0.25,
-                                0.75,
-                                0.25
-                            ]
-                        }
-                    }
-                },
-                {
-                    "type": "splash-handler",
-                    "splash-handler": {
-                        "cursorObject": "215"
-                    }
-                }
-            ],
-            "transformation": [
-                24.9996604,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                24.9996604,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                24.9996604,
-                0.0,
-                0.0,
-                88.7786178,
-                37.5535278,
-                1.0
-            ]
         },
         "1305": {
             "name": "Text_TrashOnLawn",
@@ -2932,6 +2224,712 @@
                     "type": "hide-on-vrstate"
                 }
             ]
+        },
+        "1329": {
+            "name": "Boy",
+            "parent": "786",
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                -6.5148038,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "kid",
+                    "kid": {
+                        "animatedObject": "1332",
+                        "throwablesParent": "1044",
+                        "throwableNewParent": "219",
+                        "thrownParent": "1084"
+                    }
+                }
+            ]
+        },
+        "1330": {
+            "name": "Mesh.002",
+            "parent": "1329",
+            "components": [
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.25,
+                                0.75,
+                                0.25
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "splash-handler",
+                    "splash-handler": {
+                        "cursorObject": "215"
+                    }
+                }
+            ],
+            "transformation": [
+                24.9996604,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                24.9996604,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                24.9996604,
+                0.0,
+                0.0,
+                88.7786178,
+                37.5535278,
+                1.0
+            ]
+        },
+        "1331": {
+            "link": {
+                "name": "SK_Character_SchoolBoy_01",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1329",
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "1363"
+                    }
+                }
+            ],
+            "name": "SK_Character_SchoolBoy_02"
+        },
+        "1332": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1329",
+            "components": [
+                {
+                    "animation": {
+                        "preview": false,
+                        "autoplay": false,
+                        "retarget": false
+                    }
+                },
+                {
+                    "type": "retarget-animation",
+                    "retarget-animation": {
+                        "jumpAnimation": "1035",
+                        "bodyMeshObject": "1331"
+                    }
+                }
+            ],
+            "name": "Armature2"
+        },
+        "1333": {
+            "link": {
+                "name": "mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1332",
+            "skin": "1363"
+        },
+        "1334": {
+            "link": {
+                "name": "mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1333",
+            "skin": "1363"
+        },
+        "1335": {
+            "link": {
+                "name": "mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1334",
+            "skin": "1363"
+        },
+        "1336": {
+            "link": {
+                "name": "mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1335",
+            "skin": "1363"
+        },
+        "1337": {
+            "link": {
+                "name": "mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1336",
+            "skin": "1363"
+        },
+        "1338": {
+            "link": {
+                "name": "mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1337",
+            "skin": "1363"
+        },
+        "1339": {
+            "link": {
+                "name": "mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1338",
+            "skin": "1363"
+        },
+        "1340": {
+            "link": {
+                "name": "mixamorig:HeadTop_End_end<mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1339"
+        },
+        "1341": {
+            "link": {
+                "name": "mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1336",
+            "skin": "1363"
+        },
+        "1342": {
+            "link": {
+                "name": "mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1341",
+            "skin": "1363"
+        },
+        "1343": {
+            "link": {
+                "name": "mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1342",
+            "skin": "1363"
+        },
+        "1344": {
+            "link": {
+                "name": "mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1343",
+            "skin": "1363"
+        },
+        "1345": {
+            "link": {
+                "name": "mixamorig:LeftHand_end<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1344"
+        },
+        "1346": {
+            "link": {
+                "name": "mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1336",
+            "skin": "1363"
+        },
+        "1347": {
+            "link": {
+                "name": "mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1346",
+            "skin": "1363"
+        },
+        "1348": {
+            "link": {
+                "name": "mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1347",
+            "skin": "1363"
+        },
+        "1349": {
+            "link": {
+                "name": "mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1348",
+            "skin": "1363"
+        },
+        "1350": {
+            "link": {
+                "name": "mixamorig:RightHand_end<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1349"
+        },
+        "1351": {
+            "link": {
+                "name": "mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1333",
+            "skin": "1363"
+        },
+        "1352": {
+            "link": {
+                "name": "mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1351",
+            "skin": "1363"
+        },
+        "1353": {
+            "link": {
+                "name": "mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1352",
+            "skin": "1363"
+        },
+        "1354": {
+            "link": {
+                "name": "mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1353",
+            "skin": "1363"
+        },
+        "1355": {
+            "link": {
+                "name": "mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1354",
+            "skin": "1363"
+        },
+        "1356": {
+            "link": {
+                "name": "mixamorig:LeftToe_End_end<mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1355"
+        },
+        "1357": {
+            "link": {
+                "name": "mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1333",
+            "skin": "1363"
+        },
+        "1358": {
+            "link": {
+                "name": "mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1357",
+            "skin": "1363"
+        },
+        "1359": {
+            "link": {
+                "name": "mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1358",
+            "skin": "1363"
+        },
+        "1360": {
+            "link": {
+                "name": "mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1359",
+            "skin": "1363"
+        },
+        "1361": {
+            "link": {
+                "name": "mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1360",
+            "skin": "1363"
+        },
+        "1362": {
+            "link": {
+                "name": "mixamorig:RightToe_End_end<mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1361"
+        },
+        "1364": {
+            "name": "Boy",
+            "parent": "786",
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                -6.5148038,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "kid",
+                    "kid": {
+                        "animatedObject": "1365",
+                        "throwablesParent": "1044",
+                        "throwableNewParent": "219",
+                        "thrownParent": "1084"
+                    }
+                }
+            ]
+        },
+        "1365": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1364",
+            "components": [
+                {
+                    "animation": {
+                        "preview": false,
+                        "autoplay": false,
+                        "retarget": false
+                    }
+                },
+                {
+                    "type": "retarget-animation",
+                    "retarget-animation": {
+                        "jumpAnimation": "1035",
+                        "bodyMeshObject": "1397"
+                    }
+                }
+            ],
+            "name": "Armature3"
+        },
+        "1366": {
+            "link": {
+                "name": "mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1365",
+            "skin": "1398"
+        },
+        "1367": {
+            "link": {
+                "name": "mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1366",
+            "skin": "1398"
+        },
+        "1368": {
+            "link": {
+                "name": "mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1367",
+            "skin": "1398"
+        },
+        "1369": {
+            "link": {
+                "name": "mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1368",
+            "skin": "1398"
+        },
+        "1370": {
+            "link": {
+                "name": "mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1369",
+            "skin": "1398"
+        },
+        "1371": {
+            "link": {
+                "name": "mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1370",
+            "skin": "1398"
+        },
+        "1372": {
+            "link": {
+                "name": "mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1371",
+            "skin": "1398"
+        },
+        "1373": {
+            "link": {
+                "name": "mixamorig:HeadTop_End_end<mixamorig:HeadTop_End<mixamorig:Head<mixamorig:Neck<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1372"
+        },
+        "1374": {
+            "link": {
+                "name": "mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1369",
+            "skin": "1398"
+        },
+        "1375": {
+            "link": {
+                "name": "mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1374",
+            "skin": "1398"
+        },
+        "1376": {
+            "link": {
+                "name": "mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1375",
+            "skin": "1398"
+        },
+        "1377": {
+            "link": {
+                "name": "mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1376",
+            "skin": "1398"
+        },
+        "1378": {
+            "link": {
+                "name": "mixamorig:LeftHand_end<mixamorig:LeftHand<mixamorig:LeftForeArm<mixamorig:LeftArm<mixamorig:LeftShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1377"
+        },
+        "1379": {
+            "link": {
+                "name": "mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1369",
+            "skin": "1398"
+        },
+        "1380": {
+            "link": {
+                "name": "mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1379",
+            "skin": "1398"
+        },
+        "1381": {
+            "link": {
+                "name": "mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1380",
+            "skin": "1398"
+        },
+        "1382": {
+            "link": {
+                "name": "mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1381",
+            "skin": "1398"
+        },
+        "1383": {
+            "link": {
+                "name": "mixamorig:RightHand_end<mixamorig:RightHand<mixamorig:RightForeArm<mixamorig:RightArm<mixamorig:RightShoulder<mixamorig:Spine2<mixamorig:Spine1<mixamorig:Spine<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1382"
+        },
+        "1384": {
+            "link": {
+                "name": "mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1366",
+            "skin": "1398"
+        },
+        "1385": {
+            "link": {
+                "name": "mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1384",
+            "skin": "1398"
+        },
+        "1386": {
+            "link": {
+                "name": "mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1385",
+            "skin": "1398"
+        },
+        "1387": {
+            "link": {
+                "name": "mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1386",
+            "skin": "1398"
+        },
+        "1388": {
+            "link": {
+                "name": "mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1387",
+            "skin": "1398"
+        },
+        "1389": {
+            "link": {
+                "name": "mixamorig:LeftToe_End_end<mixamorig:LeftToe_End<mixamorig:LeftToeBase<mixamorig:LeftFoot<mixamorig:LeftLeg<mixamorig:LeftUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1388"
+        },
+        "1390": {
+            "link": {
+                "name": "mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1366",
+            "skin": "1398"
+        },
+        "1391": {
+            "link": {
+                "name": "mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1390",
+            "skin": "1398"
+        },
+        "1392": {
+            "link": {
+                "name": "mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1391",
+            "skin": "1398"
+        },
+        "1393": {
+            "link": {
+                "name": "mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1392",
+            "skin": "1398"
+        },
+        "1394": {
+            "link": {
+                "name": "mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1393",
+            "skin": "1398"
+        },
+        "1395": {
+            "link": {
+                "name": "mixamorig:RightToe_End_end<mixamorig:RightToe_End<mixamorig:RightToeBase<mixamorig:RightFoot<mixamorig:RightLeg<mixamorig:RightUpLeg<mixamorig:Hips<Armature",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1394"
+        },
+        "1396": {
+            "name": "Mesh.003",
+            "parent": "1364",
+            "components": [
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.25,
+                                0.75,
+                                0.25
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "splash-handler",
+                    "splash-handler": {
+                        "cursorObject": "215"
+                    }
+                }
+            ],
+            "transformation": [
+                24.9996604,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                24.9996604,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                24.9996604,
+                0.0,
+                0.0,
+                88.7786178,
+                37.5535278,
+                1.0
+            ]
+        },
+        "1397": {
+            "link": {
+                "name": "SK_Character_SchoolBoy_01",
+                "file": "models\\Boy.fbx"
+            },
+            "parent": "1364",
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "1398"
+                    }
+                }
+            ],
+            "name": "SK_Character_SchoolBoy_03"
         }
     },
     "meshes": {
@@ -5551,12 +5549,6 @@
         }
     },
     "animations": {
-        "995": {
-            "link": {
-                "name": "Take 001",
-                "file": "models\\SK_Character_SchoolBoy_01.fbx"
-            }
-        },
         "1035": {
             "link": {
                 "name": "Armature|Armature|mixamo.com|Layer0",
@@ -5565,217 +5557,6 @@
         }
     },
     "skins": {
-        "1002": {
-            "link": {
-                "name": "skin_7",
-                "file": "models\\Boy.fbx"
-            },
-            "name": "skin_1"
-        },
-        "1120": {
-            "link": {
-                "name": "skin_7",
-                "file": "models\\Boy.fbx"
-            },
-            "joints": [
-                "1090",
-                "1091",
-                "1092",
-                "1093",
-                "1094",
-                "1095",
-                "1096",
-                "1098",
-                "1099",
-                "1100",
-                "1101",
-                "1103",
-                "1104",
-                "1105",
-                "1106",
-                "1108",
-                "1109",
-                "1110",
-                "1111",
-                "1112",
-                "1114",
-                "1115",
-                "1116",
-                "1117",
-                "1118"
-            ],
-            "name": "skin_2"
-        },
-        "1155": {
-            "link": {
-                "name": "skin_7",
-                "file": "models\\Boy.fbx"
-            },
-            "joints": [
-                "1123",
-                "1124",
-                "1125",
-                "1126",
-                "1127",
-                "1128",
-                "1129",
-                "1131",
-                "1132",
-                "1133",
-                "1134",
-                "1136",
-                "1137",
-                "1138",
-                "1139",
-                "1141",
-                "1142",
-                "1143",
-                "1144",
-                "1145",
-                "1147",
-                "1148",
-                "1149",
-                "1150",
-                "1151"
-            ],
-            "name": "skin_3"
-        },
-        "1190": {
-            "link": {
-                "name": "skin_7",
-                "file": "models\\Boy.fbx"
-            },
-            "joints": [
-                "1158",
-                "1159",
-                "1160",
-                "1161",
-                "1162",
-                "1163",
-                "1164",
-                "1166",
-                "1167",
-                "1168",
-                "1169",
-                "1171",
-                "1172",
-                "1173",
-                "1174",
-                "1176",
-                "1177",
-                "1178",
-                "1179",
-                "1180",
-                "1182",
-                "1183",
-                "1184",
-                "1185",
-                "1186"
-            ],
-            "name": "skin_4"
-        },
-        "1225": {
-            "link": {
-                "name": "skin_7",
-                "file": "models\\Boy.fbx"
-            },
-            "joints": [
-                "1193",
-                "1194",
-                "1195",
-                "1196",
-                "1197",
-                "1198",
-                "1199",
-                "1201",
-                "1202",
-                "1203",
-                "1204",
-                "1206",
-                "1207",
-                "1208",
-                "1209",
-                "1211",
-                "1212",
-                "1213",
-                "1214",
-                "1215",
-                "1217",
-                "1218",
-                "1219",
-                "1220",
-                "1221"
-            ],
-            "name": "skin_5"
-        },
-        "1260": {
-            "link": {
-                "name": "skin_7",
-                "file": "models\\Boy.fbx"
-            },
-            "joints": [
-                "1228",
-                "1229",
-                "1230",
-                "1231",
-                "1232",
-                "1233",
-                "1234",
-                "1236",
-                "1237",
-                "1238",
-                "1239",
-                "1241",
-                "1242",
-                "1243",
-                "1244",
-                "1246",
-                "1247",
-                "1248",
-                "1249",
-                "1250",
-                "1252",
-                "1253",
-                "1254",
-                "1255",
-                "1256"
-            ],
-            "name": "skin_6"
-        },
-        "1295": {
-            "link": {
-                "name": "skin_7",
-                "file": "models\\Boy.fbx"
-            },
-            "joints": [
-                "1263",
-                "1264",
-                "1265",
-                "1266",
-                "1267",
-                "1268",
-                "1269",
-                "1271",
-                "1272",
-                "1273",
-                "1274",
-                "1276",
-                "1277",
-                "1278",
-                "1279",
-                "1281",
-                "1282",
-                "1283",
-                "1284",
-                "1285",
-                "1287",
-                "1288",
-                "1289",
-                "1290",
-                "1291"
-            ],
-            "name": "skin_7"
-        },
         "1327": {
             "link": {
                 "name": "skin_0",
@@ -5807,7 +5588,76 @@
                 "1031",
                 "1032",
                 "1033"
-            ]
+            ],
+            "name": "skin_boy_1"
+        },
+        "1363": {
+            "link": {
+                "name": "skin_0",
+                "file": "models\\Boy.fbx"
+            },
+            "joints": [
+                "1333",
+                "1334",
+                "1335",
+                "1336",
+                "1337",
+                "1338",
+                "1339",
+                "1341",
+                "1342",
+                "1343",
+                "1344",
+                "1346",
+                "1347",
+                "1348",
+                "1349",
+                "1351",
+                "1352",
+                "1353",
+                "1354",
+                "1355",
+                "1357",
+                "1358",
+                "1359",
+                "1360",
+                "1361"
+            ],
+            "name": "skin_boy_2"
+        },
+        "1398": {
+            "link": {
+                "name": "skin_0",
+                "file": "models\\Boy.fbx"
+            },
+            "joints": [
+                "1366",
+                "1367",
+                "1368",
+                "1369",
+                "1370",
+                "1371",
+                "1372",
+                "1374",
+                "1375",
+                "1376",
+                "1377",
+                "1379",
+                "1380",
+                "1381",
+                "1382",
+                "1384",
+                "1385",
+                "1386",
+                "1387",
+                "1388",
+                "1390",
+                "1391",
+                "1392",
+                "1393",
+                "1394"
+            ],
+            "name": "skin_boy_3"
         }
     },
     "pipelines": {
