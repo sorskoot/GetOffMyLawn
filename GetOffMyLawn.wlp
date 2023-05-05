@@ -3071,6 +3071,12 @@
                 "name": "texture_0",
                 "file": "models\\Sky.fbx"
             }
+        },
+        "1403": {
+            "link": {
+                "name": "PolygonTown_Texture_01_A.png",
+                "file": "models\\PolygonTown_Texture_01_A.png"
+            }
         }
     },
     "images": {
@@ -3178,6 +3184,12 @@
             ],
             "name": "Sky",
             "compression": "etc1s"
+        },
+        "1402": {
+            "link": {
+                "name": "PolygonTown_Texture_01_A.png",
+                "file": "models\\PolygonTown_Texture_01_A.png"
+            }
         }
     },
     "materials": {
@@ -3423,7 +3435,7 @@
                 "file": "models\\Hose.fbx"
             },
             "Phong": {
-                "diffuseTexture": "1315",
+                "diffuseTexture": "1403",
                 "ambientColor": [
                     0.05,
                     0.05,
@@ -3503,7 +3515,7 @@
             },
             "pipeline": "35",
             "Flat": {
-                "flatTexture": "1315"
+                "flatTexture": "1403"
             }
         },
         "1046": {
@@ -4078,7 +4090,8 @@
         "models/SM_Item_ToiletRoll_02.fbx",
         "models/Get-off-my-lawn.png",
         "models/game-over.png",
-        "models/Sky.fbx"
+        "models/Sky.fbx",
+        "models/PolygonTown_Texture_01_A.png"
     ],
     "fonts": {
         "1401": {
