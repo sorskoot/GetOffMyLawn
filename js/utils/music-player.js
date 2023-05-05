@@ -1,4 +1,5 @@
 import { State } from "../classes/gameState";
+import GameGlobals from "../global";
 
 export const Songs = {
     complete:0,
