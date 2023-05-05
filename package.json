@@ -22,9 +22,10 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "@wonderlandengine/api": "^0.8.10",
-    "@wonderlandengine/components": "^0.8.16",
-    "@zestymarket/wonderland-sdk": "^1.5.1",
+    "@wonderlandengine/api": "^1.0.0",
+    "@wonderlandengine/components": "^1.0.3",
+    "@zestymarket/wonderland-sdk": "^2.0.5",
+    "@sorskoot/wonderland-components":"file://../SorskootWonderlandComponents",
     "gl-matrix": "^3.4.3",
     "http-server": "^14.1.0",
     "rxjs": "^7.5.2"
